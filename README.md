@@ -1,7 +1,7 @@
 # AWS-Project-3-Automated-File-Curation
 This repository will contain code and steps used to curate the mooring long time series products automatically.
 
-Project progress can be tracked here: https://github.com/users/mphemming/projects/2/views/1 
+Project progress can be tracked here: [https://github.com/users/mphemming/projects/2/views/1 ](https://github.com/users/mphemming/projects/5)
 
 ## Project Information
 
