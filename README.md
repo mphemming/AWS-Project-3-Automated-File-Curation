@@ -40,7 +40,7 @@ I then zipped the 'dependencies' folder and named the archive 'dependencies.zip'
 I used the following command in AWS CloudShell to create the Lambda layer:
 
 ```
-aws lambda publish-layer-version --layer-name aws-project-3-layer --description "The Lambda Python layer including dependencies required to perform automated file curation (LTSPs)" --content S3Bucket=aws-project-3/Code/,S3Key=dependencies.zip --compatible-runtimes python3.12
+aws lambda publish-layer-version --layer-name aws-project-3-layer --description "The Lambda Python layer including dependencies required to perform automated file curation (LTSPs)" --content S3Bucket=aws-project-3,S3Key=Code/dependencies.zip --compatible-runtimes python3.12
 ```
 
 To check that the layer was created, you can use:
