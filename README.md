@@ -19,14 +19,6 @@ An S3 bucket to store data and code was created with the standard option within 
 
 ### Lambda
 
-I will use lambda functions to extract, transform and load data. I will use the Lambda layer created for AWS-Project-1 called 'aws-project-1-layer'.
-
-To check what layers exist, you can use:
-
-```
-aws lambda list-layers
-```
-
 #### Python Dependencies
 
 The following Python packages are used:
@@ -37,5 +29,22 @@ The following Python packages are used:
 * netcdf4==1.6.5
 * h5py==3.11.0
 * boto3==1.34.93
+* s3fs==2024.6.1
+* pickleshare==0.7.5
 
 (TO UPDATE AS I PROGRESS)
+
+I downloaded the files after searching for the specific package here: https://pypi.org/. 
+I then zipped the 'dependencies' folder and named the archive 'dependencies.zip' and uploaded it to the 'aws-project-1-data' S3 bucket.
+
+I used the following command in AWS CloudShell to create the Lambda layer:
+
+```
+aws lambda publish-layer-version --layer-name aws-project-3-layer --description "The Lambda Python layer including dependencies required to perform automated file curation (LTSPs)" --content S3Bucket=aws-project-3/Code/,S3Key=dependencies.zip --compatible-runtimes python3.12
+```
+
+To check that the layer was created, you can use:
+```
+aws lambda list-layers
+```
+
