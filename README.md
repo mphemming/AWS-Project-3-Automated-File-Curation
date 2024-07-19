@@ -36,6 +36,7 @@ The following Python packages are used:
 
 I downloaded the files after searching for the specific package here: https://pypi.org/. 
 I then zipped the 'dependencies' folder and named the archive 'dependencies.zip' and uploaded it to the 'aws-project-1-data' S3 bucket.
+Make sure that package folders are at the top level in 'dependencies.zip' for it to work. 
 
 I used the following command in AWS CloudShell to create the Lambda layer:
 
