@@ -17,7 +17,7 @@ I am working within the ap-southeast-2 (Sydney) region.
 
 An S3 bucket to store data and code was created with the standard option within the ap-southeast-2 (Sydney) region spread across >= 3 AZs. This bucket is called 'aws-project-3'. There are two folders in this bucket called 'Code' and 'Data'.
 
-### Lambda
+## Lambda
 
 #### Python Dependencies
 
